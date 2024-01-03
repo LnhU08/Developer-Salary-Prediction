@@ -31,15 +31,16 @@ def show_about_page():
                 st.subheader('FULL NAME')
                 st.write('##### Nguyễn Công Hoài Nam')
                 st.write('##### Lê Nguyễn Hoàng Uyên')
-                st.write('##### Trần Thị Uyên Nhi')
                 st.write('##### Huỳnh Công Đức')
+                st.write('##### Trần Thị Uyên Nhi')
+
 
             with col2:
                 st.subheader('ID')
                 st.write('##### 21280099')
-                st.write('##### 21280xxx')
-                st.write('##### 21280xxx')
-                st.write('##### 21280xxx')
+                st.write('##### 21280118')
+                st.write('##### 21280124')
+                st.write('##### 21280125')
 
     with r:
         st.image('./app/static/hcmus.png', width=350)

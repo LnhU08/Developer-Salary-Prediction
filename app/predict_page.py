@@ -17,7 +17,7 @@ def load_lottiefile(filepath: str):
         return json.load(f)
 
 def convert_currency(amount, to_currency):
-    rounded_amount = round(amount * config.CURRENCY_RATES[to_currency], 3)
+    rounded_amount = round(abs(amount) * config.CURRENCY_RATES[to_currency], 3)
     if to_currency == 'VND':
         return "{:,.3f}".format(rounded_amount) + ' ' + config.CURRENCY_SYMBOLS[to_currency]
     else:
