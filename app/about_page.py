@@ -15,6 +15,8 @@ def show_about_page():
 
     st.markdown("##### Predicting developer's salary from Stack Overflow Developer Survey 2023 (https://insights.stackoverflow.com/survey)")
     st.markdown("##### This is the project we've chosen for the final assignment in the Python for Data Science course")
+    st.markdown("##### More detail, please refer to: [Github](https://github.com/nchn471/PythonFinalProject_21280099_21280118_21280124_21280125)")
+
 
     st.divider()
     
@@ -33,7 +35,6 @@ def show_about_page():
                 st.write('##### Lê Nguyễn Hoàng Uyên')
                 st.write('##### Huỳnh Công Đức')
                 st.write('##### Trần Thị Uyên Nhi')
-
 
             with col2:
                 st.subheader('ID')

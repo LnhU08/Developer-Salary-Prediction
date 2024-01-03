@@ -25,5 +25,17 @@ def show_intro_page():
 
     st.divider()
 
+    col1,col2,col3 = st.columns(3)
+    with col1:
+        st.subheader('EXPLORE PAGE')
+        st.write('Visualization')
+    with col2:
+        st.subheader('PREDICT PAGE')
+        st.write('Predict Salary base on ML Model Page')
+    with col3:
+        st.subheader('ABOUT PAGE')
+        st.write('Summary about my team and project')
+
+
 
         

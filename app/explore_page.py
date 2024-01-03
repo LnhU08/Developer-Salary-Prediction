@@ -279,42 +279,46 @@ def show_explore_page():
 
     df = load_data()
 
+    show_df = st.radio('Show cleaned dataset ?', ['Yes','No'], index=1,horizontal=True)
+    if show_df == 'Yes':
+        st.dataframe(df)
 
-    tab1,tab2,tab3,tab4,tab5,tab6,tab7,tab8,tab9,tab10, tab11, tab12 = st.tabs(config.FEATURE_LIST)
     
+    tab1,tab2,tab3,tab4,tab5,tab6,tab7,tab8,tab9,tab10, tab11, tab12 = st.tabs(config.FEATURE_LIST)
+
     with tab1:
-        st.markdown("## Remote Work :airplane_departure:")
+        st.markdown("## Remote Work")
         plot_remotework(df)
     with tab2:
-        st.markdown("## Education Level :female-teacher:")
+        st.markdown("## Education Level")
         plot_edlevel(df)
     with tab3:
-        st.markdown("## Years of Experience :calendar:")
+        st.markdown("## Years of Experience")
         plot_yearscodepro(df)
     with tab4:
-        st.markdown("## Developer Type :computer:")
+        st.markdown("## Developer Type")
         plot_devtype(df)
     with tab5:
-        st.markdown("## Country :flag-vn:")
+        st.markdown("## Country")
         plot_country(df)
     with tab6:
-        st.markdown("## Age :birthday:")
+        st.markdown("## Age ")
         plot_age(df)
     with tab7:
-        st.markdown("## Programming Language :snake:")
+        st.markdown("## Programming Language ")
         plot_programlang(df)
     with tab8:
-        st.markdown("## Databases :file_cabinet:")
+        st.markdown("## Databases")
         plot_databases(df)
     with tab9:
-        st.markdown("## Platform :cloud:")
+        st.markdown("## Cloud Platform")
         plot_platform(df)
     with tab10:
-        st.markdown("## Tools & Technologies :wrench:")
+        st.markdown("## Tools & Technologies")
         plot_tools_tech(df)
     with tab11:
-        st.markdown("## Collaboration Tools :hammer_and_wrench:")
+        st.markdown("## Collaboration Tools")
         plot_collab_tools(df)
     with tab12:
-        st.markdown("## Salary Insights :money_with_wings:")
+        st.markdown("## Salary Yearly")
         plot_salary(df)

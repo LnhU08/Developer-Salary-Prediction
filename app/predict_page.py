@@ -105,7 +105,7 @@ def show_predict_page():
 
         # PlatformHaveWorkedWith
         st.markdown("## Platform")
-        PlatformHaveWorkedWith = st.multiselect("Platform you have worked with", config.PLATFORM)
+        PlatformHaveWorkedWith = st.multiselect("Cloud Platform you have worked with", config.PLATFORM)
 
         platforms = [0] * len(config.PLATFORM)
         if PlatformHaveWorkedWith:
