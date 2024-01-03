@@ -281,6 +281,7 @@ def show_explore_page():
 
 
     tab1,tab2,tab3,tab4,tab5,tab6,tab7,tab8,tab9,tab10, tab11, tab12 = st.tabs(config.FEATURE_LIST)
+    
     with tab1:
         st.markdown("## Remote Work :airplane_departure:")
         plot_remotework(df)
@@ -303,17 +304,17 @@ def show_explore_page():
         st.markdown("## Programming Language :snake:")
         plot_programlang(df)
     with tab8:
-        st.markdown("## Education Level :female-teacher:")
+        st.markdown("## Databases :file_cabinet:")
         plot_databases(df)
     with tab9:
         st.markdown("## Platform :cloud:")
         plot_platform(df)
     with tab10:
-        st.markdown("## Tools :whale:")
+        st.markdown("## Tools & Technologies :wrench:")
         plot_tools_tech(df)
     with tab11:
-        st.markdown("## Programming Language :snake:")
+        st.markdown("## Collaboration Tools :hammer_and_wrench:")
         plot_collab_tools(df)
     with tab12:
-        st.markdown("## Salary :money_with_wings:")
+        st.markdown("## Salary Insights :money_with_wings:")
         plot_salary(df)
