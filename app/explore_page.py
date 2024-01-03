@@ -17,7 +17,7 @@ def load_data():
     df = pd.read_csv(config.DATA_PATH)
     return df
 
-st.cache()
+@st.cache_data
 def plot_remotework(df):
     remotework = df["RemoteWork"].value_counts()
     remotework_df = remotework.to_frame()
@@ -37,7 +37,7 @@ def plot_remotework(df):
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
-st.cache()
+@st.cache_data
 def plot_edlevel(df):
     edlevel = df["EdLevel"].value_counts()
     edlevel_df = edlevel.to_frame()
@@ -59,7 +59,7 @@ def plot_edlevel(df):
 
 
 
-st.cache()
+@st.cache_data
 def plot_yearscodepro(df):
     fig = plt.figure(figsize=(9, 7))
     ax = sns.histplot(data=df, x="YearsCodePro", hue="EdLevel", kde=True, bins=30)
@@ -71,6 +71,7 @@ def plot_yearscodepro(df):
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     st.pyplot(fig)
 
+@st.cache_data
 def plot_devtype(df):
     type = df["DevType"].value_counts().head(10)  
     labels = type.index
@@ -88,7 +89,7 @@ def plot_devtype(df):
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
-st.cache()
+@st.cache_data
 def plot_country(df):
     country = df["Country"].value_counts().head(10)
     labels = country.index
@@ -107,7 +108,7 @@ def plot_country(df):
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
-st.cache()
+@st.cache_data
 def plot_age(df):
     age = df["Age"].value_counts()
     age_df = age.to_frame()
@@ -127,6 +128,7 @@ def plot_age(df):
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
+@st.cache_data
 def plot_programlang(df):
     lang = df[config.LANGUAGE]
     lang_sum = lang.sum().sort_values(ascending=False)
@@ -148,6 +150,7 @@ def plot_programlang(df):
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
+@st.cache_data
 def plot_platform(df): 
     platform = df[config.PLATFORM]
     platform_sum = platform.sum().sort_values(ascending=False)
@@ -169,6 +172,7 @@ def plot_platform(df):
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
+@st.cache_data
 def plot_databases(df):
     databases = df[config.DATABASES]
     db_sum = databases.sum().sort_values(ascending=False)
@@ -189,6 +193,7 @@ def plot_databases(df):
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
+@st.cache_data
 def plot_tools_tech(df):
     tools_tech = df[config.TOOLS_TECH]
     tools_tech_sum = tools_tech.sum().sort_values(ascending=False)
@@ -210,6 +215,7 @@ def plot_tools_tech(df):
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
+@st.cache_data
 def plot_collab_tools(df):
     collab_tools = df[config.COLLAB_TOOLS]
     collab_tools_sum = collab_tools.sum().sort_values(ascending=False)
@@ -231,11 +237,12 @@ def plot_collab_tools(df):
         st.pyplot(fig)
 
 
+@st.cache_data
 def plot_salary(df):
-    fig = plt.figure(figsize=(9, 7))
-    ax = sns.boxplot(data=df, x="Country", y="Salary")
-    plt.xticks(rotation=90)
-    st.pyplot(fig)
+    # fig = plt.figure(figsize=(9, 7))
+    # ax = sns.boxplot(data=df, x="Country", y="Salary")
+    # plt.xticks(rotation=90)
+    # st.pyplot(fig)
 
     fig = plt.figure(figsize=(9, 7))
     ax = sns.histplot(data=df, x="Salary", hue="EdLevel", kde=True)
@@ -310,18 +317,3 @@ def show_explore_page():
     with tab12:
         st.markdown("## Salary :money_with_wings:")
         plot_salary(df)
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-    st.divider()
