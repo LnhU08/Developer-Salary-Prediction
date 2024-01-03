@@ -15,6 +15,7 @@ def load_lottiefile(filepath: str):
 @st.cache_data
 def load_data():
     df = pd.read_csv(config.DATA_PATH)
+    df = df.drop(["Unnamed: 0"],axis=1)
     return df
 
 @st.cache_data
