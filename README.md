@@ -1,32 +1,36 @@
 # Developer's Salary Prediction
 
+## Team
+
+|   **ID**   |       **Full Name**      |
+|:------------:|:---------------------:|
+| **21280099** | Nguyễn Công Hoài Nam  |
+| **21280118** | Lê Nguyễn Hoàng Uyên  |
+| **21280124** | Huỳnh Công Đức        |
+| **21280125** | Trần Thị Uyên Nhi     |
+
 ## Dataset
 
-* Use **Stack Overflow Annual Developer Survey 2023 ** to train model. Download the dataset at [here](https://insights.stackoverflow.com/survey)
+* Use **Stack Overflow Annual Developer Survey 2023** to train model. Download the dataset at [here](https://insights.stackoverflow.com/survey)
 
-* For Salary prediction purpose, use 9 features `RemoteWork`, `EdLevel`, `YearsCodePro`, `DevType`, `LanguageHaveWorkedWith`, `PlatformHaveWorkedWith`, 
-`ToolsTechHaveWorkedWith`,
-`Country`, `Age` to predict `ConvertedCompYearly` as Salary.
+* For Salary prediction purpose, use 11 features `Country`, `Age`, `DevType`, `EdLevel`, `YearsCodePro`, `RemoteWork`,
+`LanguageHaveWorkedWith`, `DatabaseHaveWorkedWith`, `PlatformHaveWorkedWith`, `ToolsTechHaveWorkedWith`, `NEWCollabToolsHaveWorkedWith`
+to predict `ConvertedCompYearly` as Salary.
 
 ## Notebooks (Reports)
 
-* Data preprocessing and visualization: [Preprocesing_Visual.ipynb](notebooks (reports)/Preprocesing_Visual.ipynb)
+* Data preprocessing and visualization: [Preprocesing_Visual.ipynb](notebooks_reports/Preprocesing_Visual.ipynb)
 
-* Modeling: [Model.ipynb](notebooks (reports)/Model.ipynb)
+* Modeling: [Model.ipynb](notebooks_reports/Model.ipynb)
 
 
 ## Website
 
 1. Website's links
 
-```
-https://python-ds-project.streamlit.app/
-```
-
-
+[Salary Predict Web](https://python-ds-project.streamlit.app)
 
 3. Run as local
-
 
 Run code:
 
