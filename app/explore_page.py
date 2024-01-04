@@ -33,8 +33,8 @@ def plot_remotework(df):
     with col2:
         fig, ax = plt.subplots()
         patches, texts, autotexts = ax.pie(values, labels=labels, autopct='%.0f%%')
-        plt.setp(texts, color='white')  
-        plt.setp(autotexts, color='white')  
+        plt.setp(texts, color='black')  
+        plt.setp(autotexts, color='black')  
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
@@ -53,8 +53,8 @@ def plot_edlevel(df):
     with col2:
         fig, ax = plt.subplots()
         patches, texts, autotexts = ax.pie(values, labels=labels, autopct='%.0f%%')
-        plt.setp(texts, color='white')  
-        plt.setp(autotexts, color='white')  
+        plt.setp(texts, color='black')  
+        plt.setp(autotexts, color='black')  
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
@@ -85,8 +85,8 @@ def plot_devtype(df):
     with col2:
         fig, ax = plt.subplots()
         patches, texts, autotexts = ax.pie(values, labels=labels, autopct='%.0f%%')
-        plt.setp(texts, color='white')  
-        plt.setp(autotexts, color='white')  
+        plt.setp(texts, color='black')  
+        plt.setp(autotexts, color='black')  
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
@@ -104,8 +104,8 @@ def plot_country(df):
     with col2:
         fig, ax = plt.subplots()
         patches, texts, autotexts = ax.pie(values, labels=labels, autopct='%.0f%%')
-        plt.setp(texts, color='white')  
-        plt.setp(autotexts, color='white')  
+        plt.setp(texts, color='black')  
+        plt.setp(autotexts, color='black')  
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
@@ -124,8 +124,8 @@ def plot_age(df):
     with col2:
         fig, ax = plt.subplots()
         patches, texts, autotexts = ax.pie(values, labels=labels, autopct='%.0f%%')
-        plt.setp(texts, color='white')  
-        plt.setp(autotexts, color='white')  
+        plt.setp(texts, color='black')  
+        plt.setp(autotexts, color='black')  
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
@@ -146,8 +146,8 @@ def plot_programlang(df):
     with col2:
         fig, ax = plt.subplots()
         patches, texts, autotexts = ax.pie(values, labels=labels, autopct='%.0f%%')
-        plt.setp(texts, color='white')  
-        plt.setp(autotexts, color='white')  
+        plt.setp(texts, color='black')  
+        plt.setp(autotexts, color='black')  
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
@@ -168,8 +168,8 @@ def plot_platform(df):
     with col2:
         fig, ax = plt.subplots()
         patches, texts, autotexts = ax.pie(values, labels=labels, autopct='%.0f%%')
-        plt.setp(texts, color='white')  
-        plt.setp(autotexts, color='white')  
+        plt.setp(texts, color='black')  
+        plt.setp(autotexts, color='black')  
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
@@ -189,8 +189,8 @@ def plot_databases(df):
     with col2:
         fig, ax = plt.subplots()
         patches, texts, autotexts = ax.pie(values, labels=labels, autopct='%.0f%%')
-        plt.setp(texts, color='white')  
-        plt.setp(autotexts, color='white')  
+        plt.setp(texts, color='black')  
+        plt.setp(autotexts, color='black')  
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
@@ -211,8 +211,8 @@ def plot_tools_tech(df):
     with col2:
         fig, ax = plt.subplots()
         patches, texts, autotexts = ax.pie(values, labels=labels, autopct='%.0f%%')
-        plt.setp(texts, color='white')  
-        plt.setp(autotexts, color='white')  
+        plt.setp(texts, color='black')  
+        plt.setp(autotexts, color='black')  
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
@@ -232,8 +232,8 @@ def plot_collab_tools(df):
     with col2:
         fig, ax = plt.subplots()
         patches, texts, autotexts = ax.pie(values, labels=labels, autopct='%.0f%%')
-        plt.setp(texts, color='white')  
-        plt.setp(autotexts, color='white')  
+        plt.setp(texts, color='black')  
+        plt.setp(autotexts, color='black')  
         fig.patch.set_alpha(0)
         st.pyplot(fig)
 
