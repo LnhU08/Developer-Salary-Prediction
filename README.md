@@ -24,16 +24,12 @@ to predict `ConvertedCompYearly` as Salary.
 * Modeling: [Model.ipynb](notebooks_reports/Model.ipynb)
 
 
-## Website
+## Demo
 
-1. Website's links
-
-[Salary Predict Web](https://python-ds-project.streamlit.app)
+1. Website: [Salary Predict Web](https://python-ds-project.streamlit.app)
 
 3. Run as local
-
 Run code:
-
 ```
 streamlit run app/app.py
 ```
