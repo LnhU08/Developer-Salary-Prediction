@@ -1,6 +1,6 @@
 # Developer's Salary Prediction
 
-## Team
+## Our Team
 
 |   **ID**   |       **Full Name**      |
 |:------------:|:---------------------:|
