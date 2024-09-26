@@ -26,7 +26,7 @@ to predict `ConvertedCompYearly` as Salary.
 
 ## Demo
 
-1. Website: [Salary Predict Web](https://python-ds-project.streamlit.app)
+1. Website: [Salary Predict Web](https://developer-salary-prediction-project.streamlit.app/)
 
 3. Run as local
 Run code:
