@@ -7,7 +7,7 @@ import json
 
 
 
-st.cache()
+st.cache_data()
 def load_model():
     return joblib.load(config.CKPT_PATH)
 

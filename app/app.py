@@ -9,12 +9,13 @@ from predict_page import show_predict_page
 
 
 
-# #Layout
-# st.set_page_config(
-#     page_title="Salary Predict App",
-#     layout="wide",
-#     page_icon=":mag_right:",
-#     initial_sidebar_state="expanded")
+#Layout
+st.set_page_config(
+    page_title="Salary Predict App",
+    layout="wide",
+    page_icon=":mag_right:",
+    initial_sidebar_state="expanded"
+)
 
 #Data Pull and Functions
 st.markdown("""
